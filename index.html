@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Tacos e Nachos</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./static/img/chili-logo.png" alt="Logo restaurante mexicano" class="header__logo">
+        <p class="header__text">Compre tacos e burritos</p>
+    </header>
+
+    <main class="main">
+        <section class="taco">
+            <img src="./static/img/tacos.jpg" alt="" class="taco__img">
+            <p class="taco__title">Taco</p>
+            <p class="taco__price">R$ 12,00 por uni.</p>
+            <ul class="taco__ingredient">
+                <li class="taco__ingredient--item">Tortilhas para o taco</li>
+                <li class="taco__ingredient--item">tomates</li>
+                <li class="taco__ingredient--item">cebola</li>
+                <li class="taco__ingredient--item">Chilli</li>
+                <li class="taco__ingredient--item">feijão em conserva</li>
+                <li class="taco__ingredient--item">abacate</li>
+            </ul>
+            <form class="form">
+                <input type="hidden" name="price" value="12">
+                <input required min="1" max="10" type="number" placeholder="Quantidade" name="unit">
+                <button type="submit">Calcular Total</button>
+            </form>
+        </section>
+        <section class="burrito">
+            <img src="./static/img/burrito.jpg" alt="" class="burrito__img">
+            <p class="burrito__title">Burrito</p>
+            <p class="burrito__price">R$ 18,00 por uni.</p>
+            <ul class="burrito__ingredient">
+                <li class="burrito__ingredient--item">Carne moída refogada</li>
+                <li class="burrito__ingredient--item">Queijo prato cortado em tiras</li>
+                <li class="burrito__ingredient--item">farinha de milho</li>
+                <li class="burrito__ingredient--item">Tomate e cebola</li>
+                <li class="burrito__ingredient--item">Alface cortado em tiras</li>
+            </ul>
+            <form class="form">
+                <input type="hidden" name="price" value="18">
+                <input required min="1" max="10" type="number" placeholder="Quantidade" name="unit">
+                <button type="submit">Calcular Total</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <hr>
+            <p>Luana B. dos Santos - 2023</p>
+            <hr>
+        </div>
+    </footer>
+
+    <script src="./static/js/script.js"></script>
+</body>
+</html>
